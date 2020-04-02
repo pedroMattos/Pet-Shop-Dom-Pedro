@@ -23,5 +23,3 @@ export default function install (Vue) {
     }
   })
 }
-
-console.log('teste')
