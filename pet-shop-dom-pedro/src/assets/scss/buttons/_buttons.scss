@@ -1,0 +1,43 @@
+.btn {
+  min-width: 150px;
+  min-height: 35px;
+  padding: 10px;
+  font-weight: 600;
+  border: none;
+  background-color: $blue-button;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  span {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    width: 150px;
+    left: 0;
+    padding: 10px;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    background-color: $red;
+    height: 40px;
+    width: 40px;
+    top: -23px;
+    right: -23px;
+    transform-origin: center;
+    transform: rotate(45deg);
+    z-index: 0;
+    transition-duration: .5s;
+  }
+  &:hover {
+    &::after {
+      content: '';
+      transition-duration: .5s;
+      transform-origin: center;
+      transform: rotate(90deg);
+      height: 150px;
+      width: 100%;
+    }
+  }
+}
