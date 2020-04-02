@@ -1,6 +1,8 @@
 @import '../../../node_modules/bootstrap-4-grid/css/grid.min.css';
+@import 'variables.scss';
+@import './buttons/buttons.scss';
 
 body {
   margin: 0;
-  background-color: #E7EEF3;
+  background-color: $green-body;
 }
