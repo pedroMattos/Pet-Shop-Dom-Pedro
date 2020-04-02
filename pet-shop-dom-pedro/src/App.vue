@@ -18,7 +18,10 @@ export default {
   components: {
     sidebar,
   },
-}
+  mounted() {
+    console.log(this.$firebase);
+  },
+};
 </script>
 
 <style lang="scss">
