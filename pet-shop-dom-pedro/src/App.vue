@@ -5,7 +5,7 @@
         <sidebar/>
       </div>
       <div class="col-md-10">
-        <router-view/>
+        <router-view style="padding:40px"/>
       </div>
     </section>
   </div>
