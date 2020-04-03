@@ -1,0 +1,78 @@
+#home{
+    position: relative;
+    background: url(../../image/fundo.jpg) no-repeat center;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+  }
+  
+
+#overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #A0DFAA;
+    z-index: 0;
+    opacity: 0.80;
+  }
+/*.home {
+    width: 100%;
+    max-width: 500px;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Nanum Gothic', sans-serif;
+}*/
+
+
+#form-div {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+form {
+    width: 250px;
+    height: 200px;
+    margin: auto;
+  }
+
+/*.home form{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto;
+}
+  
+.home form .link-register{
+    text-decoration: none;
+    color: #852b37;
+}
+  
+.home form h1{
+    font-size: 40px;
+    margin-bottom: 32px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+  
+.home input{
+    font-size: 16px;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    border-width: 1px;
+    border-color: rgb(152, 152, 236);
+    border-radius: 4px;
+}*/
