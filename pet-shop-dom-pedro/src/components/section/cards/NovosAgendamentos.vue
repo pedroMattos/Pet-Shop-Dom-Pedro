@@ -1,5 +1,5 @@
 <template>
-  <div id="news-agd">
+  <div class="cards" id="news-agd">
     <p>Novos</p>
   </div>
 </template>
