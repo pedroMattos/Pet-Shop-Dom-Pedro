@@ -1,0 +1,12 @@
+.cards {
+  @include card(#4D85AB);
+  &#news-agd {
+    @include card(#91675A);
+  }
+  &#estoque {
+    @include card(#267862);
+  }
+  &#adg-hoje {
+    @include card(#BF7E44);
+  }
+}
