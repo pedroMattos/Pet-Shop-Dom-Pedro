@@ -1,11 +1,8 @@
 <template>
   <div id="app">
     <section class="row">
-      <div class="col-md-2">
-        <sidebar/>
-      </div>
-      <div class="col-md-10">
-        <router-view style="padding:40px"/>
+      <div class="col-md-12">
+        <router-view/>
       </div>
     </section>
   </div>

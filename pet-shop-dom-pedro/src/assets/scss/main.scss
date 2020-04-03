@@ -3,6 +3,9 @@
 @import 'variables.scss';
 @import 'mixins.scss';
 @import './buttons/buttons.scss';
+@import './inputs/inputs.scss';
+@import './LoginPage/login.scss';
+
 @import './section/section';
 @import './cards/card';
 
@@ -11,3 +14,4 @@ body {
   background-color: $green-body;
   font-family: 'Lato', sans-serif;
 }
+
