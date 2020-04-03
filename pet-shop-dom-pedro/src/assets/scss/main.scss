@@ -1,14 +1,15 @@
 @import '../../../node_modules/bootstrap-4-grid/css/grid.min.css';
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
 @import 'variables.scss';
 @import './buttons/buttons.scss';
 @import './inputs/inputs.scss';
 @import './LoginPage/login.scss';
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
 
+@import './section/section';
 
 body {
   margin: 0;
   background-color: $green-body;
+  font-family: 'Lato', sans-serif;
 }
-
 

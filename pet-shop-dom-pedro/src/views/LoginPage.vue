@@ -8,7 +8,6 @@
 </template>
 
 <script>
-// @ is an alias to /src
 import LoginPage from '@/components/LoginForm.vue';
 
 export default {
