@@ -1,0 +1,36 @@
+@mixin triangle($color) {
+  &::after {
+    content: '';
+    position: absolute;
+    background-color: $color;
+    height: 40px;
+    width: 40px;
+    top: -23px;
+    right: -23px;
+    transform-origin: center;
+    transform: rotate(45deg);
+    z-index: 0;
+    transition-duration: .5s;
+  }
+}
+
+@mixin card($color) {
+  padding-left: 15px;
+  color: white;
+  min-height: 100px;
+  width: 100%;
+  background-color: $color;
+  margin: 10px 0;
+  position: relative;
+  @include triangle($green-primary);
+  overflow: hidden;
+  transform: scale(1);
+  box-shadow: black 0px 0px 0px;
+  transition-duration: .2s;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.1);
+    box-shadow: black 1px 1px 12px;
+    transition-delay: .2s;
+  }
+}
