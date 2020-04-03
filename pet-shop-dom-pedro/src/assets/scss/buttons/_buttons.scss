@@ -17,19 +17,7 @@
     left: 0;
     padding: 10px;
   }
-  &::after {
-    content: '';
-    position: absolute;
-    background-color: $red;
-    height: 40px;
-    width: 40px;
-    top: -23px;
-    right: -23px;
-    transform-origin: center;
-    transform: rotate(45deg);
-    z-index: 0;
-    transition-duration: .5s;
-  }
+  @include triangle($red);
   &:hover {
     &::after {
       content: '';
