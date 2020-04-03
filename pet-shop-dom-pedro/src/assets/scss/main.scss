@@ -1,8 +1,10 @@
 @import '../../../node_modules/bootstrap-4-grid/css/grid.min.css';
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
 @import 'variables.scss';
+@import 'mixins.scss';
 @import './buttons/buttons.scss';
 @import './section/section';
+@import './cards/card';
 
 body {
   margin: 0;
