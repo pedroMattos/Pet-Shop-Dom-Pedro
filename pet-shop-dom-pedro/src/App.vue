@@ -32,8 +32,8 @@ export default {
       window.uid = user ? user.uid : null;
       context.uid = window.uid;
       if(window.uid) {
-        context.classeView = 'col-md-10';
-        context.classeSide = 'col-md-2';
+        context.classeView = 'col-md-11';
+        context.classeSide = 'col-md-1';
       } else {
         this.$route.push({ name: 'Login' });
       }
