@@ -1,12 +1,18 @@
 <template>
   <div id="sidebar">
     <p>Sou a sidebar :P</p>
+    <logout/>
   </div>
 </template>
 
 <script>
+import logout from './LogoutButton.vue';
+
 export default {
   name: 'Sidebar',
+  components: {
+    logout,
+  },
 };
 </script>
 
