@@ -31,8 +31,20 @@ export default {
     };
   },
   methods: {
-    login() {
-      alert('Fazer logica de login');
+    async login() {
+      const context = this;
+      // recupera o valor das variaveis
+      const { email, pass } = this;
+      try {
+        // realiza a autenticação
+        const resp = await this.$firebase.auth().signInWithEmailAndPassword(email, pass);
+        window.uid = resp.user.uid;
+        if (window.uid) {
+          this.$router.push({ name: 'Home' });
+        } else {
+          this.$router.push({ name: 'Login' });
+        }
+      } catch(e) {}
     },
   },
 };

@@ -1,7 +1,10 @@
 <template>
   <div id="app">
     <section class="row">
-      <div class="col-md-12">
+      <div style="transition-duration:.5s" :class="[classeSide]">
+        <sidebar v-if="uid"/>
+      </div>
+      <div style="transition-duration:.5s" :class="[classeView, 'col-sm-12']">
         <router-view/>
       </div>
     </section>
@@ -15,8 +18,26 @@ export default {
   components: {
     sidebar,
   },
+  data() {
+    return {
+      uid: window.uid,
+      classeView: 'col-md-12',
+      classeSide: null,
+    };
+  },
   mounted() {
-    console.log(this.$firebase);
+    const context = this;
+    this.$firebase.auth().onAuthStateChanged((user) => {
+      // se user.uid não estiver vazio, loga, senao nulo
+      window.uid = user ? user.uid : null;
+      context.uid = window.uid;
+      if(window.uid) {
+        context.classeView = 'col-md-10';
+        context.classeSide = 'col-md-2';
+      } else {
+        this.$route.push({ name: 'Login' });
+      }
+    });
   },
 };
 </script>
