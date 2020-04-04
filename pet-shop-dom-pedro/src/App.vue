@@ -2,7 +2,7 @@
   <div id="app">
     <section class="row">
       <div style="transition-duration:.5s" :class="[classeSide]">
-        <sidebar v-if="uid"/>
+        <sidebar :email="email" :uid="uid" v-if="uid"/>
       </div>
       <div style="transition-duration:.5s" :class="[classeView, 'col-sm-12']">
         <router-view/>
@@ -23,6 +23,7 @@ export default {
       uid: window.uid,
       classeView: 'col-md-12',
       classeSide: null,
+      email: null,
     };
   },
   mounted() {
@@ -31,9 +32,10 @@ export default {
       // se user.uid não estiver vazio, loga, senao nulo
       window.uid = user ? user.uid : null;
       context.uid = window.uid;
+      context.email = user.email;
       if(window.uid) {
-        context.classeView = 'col-md-11';
-        context.classeSide = 'col-md-1';
+        context.classeView = 'col-md-10';
+        context.classeSide = 'col-md-2';
       } else {
         this.$route.push({ name: 'Login' });
       }
