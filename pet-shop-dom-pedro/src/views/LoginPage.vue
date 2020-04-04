@@ -1,6 +1,6 @@
 <template>
   <div id="home" class="home">
-      <div id="overlay"></div>
+    <div id="overlay"></div>
     <div id="form-div">
       <login-page/>
     </div>
